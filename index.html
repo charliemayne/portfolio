@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Charlie Snow</title>
+    <title>Peter Griffin</title>
     <link rel="stylesheet" href="output.css">
     <script>
         // Initialize dark mode based on local storage
@@ -17,9 +17,12 @@
     </script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-    <section class="top-section p-8 text-center bg-gray-100 dark:bg-gray-800">
-        <h1 class="text-4xl font-bold">My name is Charlie Snow</h1>
-        <p class="mt-4 text-lg">I am a full-stack software developer...</p>
+    <section class="top-section p-8 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+        <img src="assets/peter-griffin.webp" alt="Peter Griffin" class="w-32 h-32 rounded-full mr-6">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Hello! I am Peter Griffin</h1>
+            <p class="mt-4 text-lg">I am a shipping specialist at the Pawtucket Brewery</p>
+        </div>
     </section>
 
     <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0">
@@ -38,21 +41,33 @@
         </div>
     </header>
     
-    <section id="about" class="p-8">
-        <h2 class="text-3xl font-bold">About Me</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">A brief introduction about myself...</p>
-    </section>
-
-    <section id="projects" class="p-8 bg-gray-100 dark:bg-gray-800">
-        <h2 class="text-3xl font-bold">Projects</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">A showcase of my recent work...</p>
-    </section>
-
-    <section id="contact" class="p-8">
-        <h2 class="text-3xl font-bold">Contact</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">Feel free to reach out...</p>
-    </section>
-
+    <div class="sm:mx-0 md:mx-16 lg:mx-32 xl:mx-64">
+        <section id="about" class="p-8">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">A brief introduction about myself...</p>
+        </section>
+    
+        <section id="skills" class="p-8 bg-gray-100 dark:bg-gray-800">
+            <h2 class="text-3xl font-bold">Skills</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">A summary of my skills...</p>
+        </section>
+    
+        <section id="work-experience" class="p-8">
+            <h2 class="text-3xl font-bold" >Work Experience</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">A little about my work experience...</p>
+        </section>
+    
+        <section id="projects" class="p-8 bg-gray-100 dark:bg-gray-800">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">A showcase of my recent work...</p>
+        </section>
+    
+        <section id="contact" class="p-8">
+            <h2 class="text-3xl font-bold">Contact</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">Feel free to reach out...</p>
+        </section>
+    </div>
+    
     <footer class="bg-gray-800 text-white py-4">
         <p class="text-center">&copy; 2024 Charlie Snow. All rights reserved.</p>
     </footer>
