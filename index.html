@@ -17,8 +17,8 @@
     </script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-    <section class="top-section p-8 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-        <img src="assets/peter-griffin.webp" alt="Peter Griffin" class="w-40 h-40 rounded-full mr-6">
+    <section class="top-section px-8 py-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+        <img src="assets/peter-griffin.webp" alt="Peter Griffin" class="w-36 h-36 rounded-full mr-6">
         <div class="text-center">
             <h1 class="text-4xl font-bold">Hello! I am Peter Griffin</h1>
             <p class="mt-4 text-lg">I am a shipping specialist at the Pawtucket Brewery</p>
@@ -28,19 +28,60 @@
         </div>
     </section>
 
-    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0">
+    <!-- <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0">
         <div class="container mx-auto flex justify-between items-center p-4">
             <nav class="navbar">
                 <ul class="flex space-x-4">
-                    <li><a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
+                    <li><a href="#top" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
+                    <li><a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Skills</a></li>
+                    <li><a href="#work-experience" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Experience</a></li>
+                    <li><a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Contact</a></li>
+                </ul>
+            </nav> -->
+            <!-- Dark Mode Toggle -->
+            <!-- <button id="theme-toggle" class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </header> -->
+
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Navbar Links -->
+            <nav class="hidden md:flex space-x-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#top" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
+                    <li><a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Skills</a></li>
+                    <li><a href="#work-experience" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Experience</a></li>
                     <li><a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Projects</a></li>
                     <li><a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-800 dark:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
             <!-- Dark Mode Toggle -->
             <button id="theme-toggle" class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded">
                 Toggle Dark Mode
             </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="dropdown" class="hidden md:hidden transition-all duration-300 ease-in-out transform">
+            <nav class="px-4 pt-2 pb-4 space-y-2 bg-gray-100 dark:bg-gray-800">
+                <ul class="space-y-2">
+                    <li><a href="#top" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
+                    <li><a href="#skills" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Skills</a></li>
+                    <li><a href="#work-experience" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Experience</a></li>
+                    <li><a href="#projects" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Projects</a></li>
+                    <li><a href="#contact" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     
@@ -52,7 +93,22 @@
     
         <section id="skills" class="p-8 bg-gray-100 dark:bg-gray-800">
             <h2 class="text-3xl font-bold">Skills</h2>
-            <p class="mt-4 text-gray-700 dark:text-gray-300">A summary of my skills...</p>
+            <p class="my-4 text-gray-700 dark:text-gray-300">Throughout my career, I have built up a collection of technical skills. They include:</p>
+            <ul class="flex flex-wrap items-center gap-2">
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">Java</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">Python</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">SQL</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">JavaScript</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">HTML</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">CSS</span></li>
+
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">Java</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">Python</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">SQL</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">JavaScript</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">HTML</span></li>
+                <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">CSS</span></li>
+            </ul>
         </section>
     
         <section id="work-experience" class="p-8">

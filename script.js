@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var dropdown = document.getElementById('dropdown');
+    if (dropdown.classList.contains('hidden')) {
+        dropdown.classList.remove('hidden');
+    } else {
+        dropdown.classList.add('hidden');
+    }
+});
