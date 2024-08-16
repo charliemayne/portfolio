@@ -2686,6 +2686,10 @@ video {
   forced-color-adjust: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
