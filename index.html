@@ -35,7 +35,6 @@
                 <ul class="flex space-x-4">
                     <li><a href="#top" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
                     <li><a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Skills</a></li>
-                    <li><a href="#work-experience" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Experience</a></li>
                     <li><a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Projects</a></li>
                     <li><a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Contact</a></li>
                 </ul>
@@ -49,7 +48,7 @@
                 </button>
             </div>
             <!-- Dark Mode Toggle -->
-            <button id="theme-toggle" class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded">
+            <button id="theme-toggle" class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded hover:bg-gray-500 hover:text-white dark:hover:bg-gray-200 dark:hover:text-black">
                 Toggle Dark Mode
             </button>
         </div>
@@ -59,7 +58,6 @@
                 <ul class="space-y-2">
                     <li><a href="#top" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">About</a></li>
                     <li><a href="#skills" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Skills</a></li>
-                    <li><a href="#work-experience" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Experience</a></li>
                     <li><a href="#projects" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Projects</a></li>
                     <li><a href="#contact" class="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Contact</a></li>
                 </ul>
@@ -75,8 +73,9 @@
             <p class="mt-4 text-gray-700 dark:text-gray-300">If you're looking for someone who's not just another face in the crowd, someone who brings creativity, dedication, and a bit of fun to every project, then I'm your guy. I may not be your typical professional, but that's what makes me stand out. I'm all about getting the job done right while making sure we have a good time doing it.</p>
             <p class="mt-4 text-gray-700 dark:text-gray-300">Let’s connect and see what we can create together!</p>
         </section>
+        <hr class="my-8 border-gray-300 dark:border-gray-600">
     
-        <section id="skills" class="p-8 bg-gray-100 dark:bg-gray-800">
+        <section id="skills" class="p-8">
             <h2 class="text-3xl font-bold text-center">Skills</h2>
             <p class="my-4 text-gray-700 dark:text-gray-300">Throughout my career, I have built up a collection of technical skills. They include:</p>
             <ul class="flex flex-wrap items-center gap-2">
@@ -95,29 +94,52 @@
                 <li><span class="inline-block p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">CSS</span></li>
             </ul>
         </section>
+        <hr class="my-8 border-gray-300 dark:border-gray-600">
     
-        <section id="work-experience" class="p-8">
-            <h2 class="text-3xl font-bold text-center" >Work Experience</h2>
-            <p class="mt-4 text-gray-700 dark:text-gray-300">A little about my work experience...</p>
-        </section>
-    
-        <section id="projects" class="p-8 bg-gray-100 dark:bg-gray-800">
+        <section id="projects" class="p-8">
             <h2 class="text-3xl font-bold text-center">Projects</h2>
-            <p class="mt-4 text-gray-700 dark:text-gray-300">A showcase of my recent work...</p>
+            <p class="mt-4 text-gray-700 dark:text-gray-300">I build full-stack software solutions. Here's what I have been working on:</p>
             <!-- Template for a project card -->
-            <div class="flex flex-col md:flex-row gap-4 border-2 border-gray-700 p-4 rounded-lg">
-                <div class="w-full max-w-80 h-45 overflow-hidden mx-16">
+            <div class="flex flex-col md:flex-row gap-4 p-4 m-4 rounded-lg justify-center bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">
+                <div class="w-full max-w-80 h-45 overflow-hidden">
                     <img src="assets/peter_griffin_news_reporter.jpg" alt="project image" class="object-cover w-full h-full rounded-lg">
                 </div>
-                <div class="flex-1 flex flex-col">
+                <div class="flex-1 flex flex-col ml-8">
                     <h3 class="text-2xl font-bold mb-2">Project Title</h3>
                     <p class="text-gray-700 dark:text-gray-300 mb-2 flex-grow">Description here...</p>
-                    <a class="self-start text-gray-700 border border-current bg-transparent hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded">
+                    <a class="self-start border border-current bg-transparent hover:bg-black hover:text-white font-bold py-2 px-4 rounded dark:hover:bg-white dark:hover:text-black">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 p-4 m-4 rounded-lg justify-center bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">
+                <div class="w-full max-w-80 h-45 overflow-hidden">
+                    <img src="assets/peter_griffin_news_reporter.jpg" alt="project image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="flex-1 flex flex-col ml-8">
+                    <h3 class="text-2xl font-bold mb-2">Project Title</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-2 flex-grow">Description here...</p>
+                    <a class="self-start border border-current bg-transparent hover:bg-black hover:text-white font-bold py-2 px-4 rounded dark:hover:bg-white dark:hover:text-black">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 p-4 m-4 rounded-lg justify-center bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow">
+                <div class="w-full max-w-80 h-45 overflow-hidden">
+                    <img src="assets/peter_griffin_news_reporter.jpg" alt="project image" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="flex-1 flex flex-col ml-8">
+                    <h3 class="text-2xl font-bold mb-2">Project Title</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-2 flex-grow">Description here...</p>
+                    <a class="self-start border border-current bg-transparent hover:bg-black hover:text-white font-bold py-2 px-4 rounded dark:hover:bg-white dark:hover:text-black">
                         View Project
                     </a>
                 </div>
             </div>
         </section>
+        <hr class="my-8 border-gray-300 dark:border-gray-600">
     
         <section id="contact" class="p-8">
             <h2 class="text-3xl font-bold text-center">Contact</h2>
